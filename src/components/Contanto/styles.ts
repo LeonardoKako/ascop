@@ -5,9 +5,12 @@ export const ListContacts = styled.ul`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-wrap: wrap;
   width: 100%;
   gap: 20px;
+
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 
   li {
     padding: 8px;

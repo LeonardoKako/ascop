@@ -59,9 +59,12 @@ export const List = styled.ul`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-wrap: wrap;
   width: 100%;
   gap: 40px;
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
 
   li {
     border-radius: 8px;
